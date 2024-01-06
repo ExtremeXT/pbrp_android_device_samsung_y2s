@@ -1,7 +1,7 @@
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common PBRP stuff
+# Inherit from common PBRP config
 $(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit device configuration
@@ -16,7 +16,7 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/y2s/recover
 # Device identifier
 PRODUCT_RELEASE_NAME := y2s
 PRODUCT_DEVICE := y2s
-PRODUCT_NAME := twrp_y2s
+PRODUCT_NAME := pbrp_y2s
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := Galaxy S20+
 PRODUCT_MANUFACTURER := samsung
