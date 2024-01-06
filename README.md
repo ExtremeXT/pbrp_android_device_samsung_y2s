@@ -15,7 +15,7 @@ Available at https://github.com/corsicanu/android_kernel_samsung_universal9830 (
 - Fastbootd
 
 ## How to build
-This was tested to be compatible with the Android 12.1 tree of [the PBRP minimal manifest](https://github.com/PitchBlackRecoveryProject/manifest_pb)
+This repository is compatible with the Android 12.1 tree of [the PBRP minimal manifest](https://github.com/PitchBlackRecoveryProject/manifest_pb)
 1. Set up the build environment following instructions from [here](https://github.com/PitchBlackRecoveryProject/manifest_pb?tab=readme-ov-file#how-to-build)
 2. In the root folder of cloned repo you need to clone the device tree:
 ```bash
