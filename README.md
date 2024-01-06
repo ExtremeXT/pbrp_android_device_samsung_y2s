@@ -1,5 +1,4 @@
 <h1 align="center">
-  <br>
   <a href="https://pitchblackrecovery.com"><img src="https://raw.githubusercontent.com/shovon668/xda-template/r3/pbrp3-banner-xda.png" alt="Welcome to PitchBlack Recovery Project 👋" width="600"></a>
   <br>
  Welcome to PitchBlack Recovery Project 👋
