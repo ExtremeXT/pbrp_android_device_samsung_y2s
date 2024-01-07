@@ -30,9 +30,13 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
-# 64-bit
-TARGET_SUPPORTS_64_BIT_APPS := true
+# CPU
 TARGET_IS_64_BIT := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone7/temp"
+TARGET_CPU_SMP := true
+ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
 
 # File systems
 TARGET_USES_MKE2FS := true
@@ -45,6 +49,7 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 69009408
 
 # Partitions
+AB_OTA_UPDATER := false
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 BOARD_ROOT_EXTRA_FOLDERS := cache carrier data_mirror efs keyrefuge linkerconfig metadata omr optics prism spu
@@ -59,6 +64,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 TW_Y_OFFSET := 100
 TW_H_OFFSET := -100
 TW_THEME := portrait_hdpi
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone7/temp"
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
@@ -80,7 +86,6 @@ TW_INCLUDE_CRYPTO := false
 TW_INCLUDE_CRYPTO_FBE := false
 TW_INCLUDE_FBE_METADATA_DECRYPT := false
 TARGET_USES_LOGD := true
-TW_USE_SAMSUNG_HAPTICS := true
 TARGET_OTA_ASSERT_DEVICE := y2s,y2slte,y2sxxx
 
 # PBRP Specific Build Flags
